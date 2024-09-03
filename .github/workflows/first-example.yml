@@ -13,7 +13,7 @@ jobs:
           run: pwd
 
         - name: read file
-          run: cat README.md
+          run: cat ACTIONS-1/README.md
 
 
 
