@@ -26,12 +26,10 @@ jobs:
         needs: build_job_1
         runs-on: ubuntu-latest
         steps: 
-        - name: upload dragon.txt
+        - name: download dragon.txt
           uses: actions/download-artifact@v3
           with:
             name: dragon-text-file
-            path: dragon.txt
-        
         - name: test file exist
           run: grep -i "dragon" dragon.txt
         
