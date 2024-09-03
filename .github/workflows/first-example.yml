@@ -9,8 +9,8 @@ jobs:
         - name: welcome message
           run: echo "My first Github Action job"
 
-        - name: list files
-          run: ls
+        - name: run pwd
+          run: pwd
 
         - name: read file
           run: cat README.md
